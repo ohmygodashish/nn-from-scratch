@@ -8,6 +8,7 @@ def data_loader(data):
         data: Input data where the first row contains labels and remaining rows contain features.
     """
     data = np.array(data) # Convert df to numpy array
+    np.random.shuffle(data)
 
     m, n = data.shape
     #print(m, n)
