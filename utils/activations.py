@@ -7,5 +7,6 @@ def d_ReLU(Z):
     return Z > 0
 
 def softmax(Z):
-    A = np.exp(Z) / sum(np.exp(Z))
+    Z_shifted = Z - np.max(Z, axis=0, keepdims=True)
+    A = np.exp(Z_shifted) / np.sum(np.exp(Z_shifted), axis=0, keepdims=True)
     return A
