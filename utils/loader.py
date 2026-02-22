@@ -2,7 +2,10 @@ import numpy as np
 
 def data_loader(data):
     """
-    Helper function to load and split dataset into test and training sets.
+    Load and preprocess data for machine learning model training (80%) and testing (20%).
+
+    Args:
+        data: Input data where the first row contains labels and remaining rows contain features.
     """
     data = np.array(data) # Convert df to numpy array
 

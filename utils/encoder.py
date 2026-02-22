@@ -3,6 +3,7 @@ import numpy as np
 def one_hot(Y):
     """
     Convert class labels to one-hot encoded matrix.
+    
     Args:
         Y (np.ndarray): 1D array of class labels (integers from 0 to num_classes-1).
     Returns:
