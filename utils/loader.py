@@ -24,5 +24,5 @@ def data_loader(data):
     Y_train = data_train[0]
     X_train = data_train[1:n] / 255 # Scaled the pixel intensity values between 0 to 1
 
-    return X_train, Y_train, X_test, Y_test
+    return X_train, Y_train, X_test, Y_test, m, n
 
