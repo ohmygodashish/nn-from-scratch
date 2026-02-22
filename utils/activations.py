@@ -8,3 +8,4 @@ def d_ReLU(Z):
 
 def softmax(Z):
     A = np.exp(Z) / sum(np.exp(Z))
+    return A
