@@ -9,9 +9,9 @@ def init_params():
     - Hidden layer: 10 neurons
     - Output layer: 10 neurons (for 10 digit classes)
     """
-    W1 = np.random.rand(10, 784)
+    W1 = np.random.rand(10, 784) * np.sqrt(1/784)
     b1 = np.random.rand(10, 1)
-    W2 = np.random.rand(10, 10)
+    W2 = np.random.rand(10, 10) * np.sqrt(1/10)
     b2 = np.random.rand(10, 1)
 
     return W1, b1, W2, b2
