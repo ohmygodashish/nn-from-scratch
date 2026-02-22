@@ -119,7 +119,7 @@ def main():
     W1, b1, W2, b2 = gradient_descent(X_train, Y_train, args.learning_rate, args.iterations)
     
     test_predictions = make_predictions(X_test, W1, b1, W2, b2)
-    print("\nTest accuracy is: ", 100 * get_accuracy(test_predictions, Y_test))
+    print("\nTest accuracy (in %) is: ", 100 * get_accuracy(test_predictions, Y_test))
 
 
 if __name__ == "__main__":
