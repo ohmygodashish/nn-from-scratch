@@ -23,7 +23,7 @@ A neural network implementation built entirely from scratch using NumPy. Impleme
 To train and get test results of the neural network on MNIST data:
 
 ```bash
-python main.py --dataset_path <path-to-mnist-csv>
+python main.py --dataset_path data/train.csv
 ```
 
 Example with custom learning rate and iterations:
